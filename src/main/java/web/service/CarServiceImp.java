@@ -18,12 +18,6 @@ public class CarServiceImp implements CarService {
     public CarServiceImp(CarDao carDao) {
         this.carDao = carDao;
     }
-
-    @Override
-    public int countCars(List<Car> cars) {
-        return carDao.countCars(cars);
-    }
-
     @Override
     public List<Car> getCars(int count) {
         return carDao.getCars(count);
